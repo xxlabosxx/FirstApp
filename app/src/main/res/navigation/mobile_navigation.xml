@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/calculoFragment">
+
+    <fragment
+        android:id="@+id/calculoFragment"
+        android:name="com.gustavolabos.myapplication.view.CalculoFragment"
+        android:label="fragment_calculo"
+        tools:layout="@layout/fragment_calculo" />
+    <fragment
+        android:id="@+id/verificaFragment"
+        android:name="com.gustavolabos.myapplication.view.VerificaFragment"
+        android:label="VerificaFragment" />
+</navigation>

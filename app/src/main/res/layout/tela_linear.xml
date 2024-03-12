@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".view.MainActivity"
+    tools:layout="@layout/fragment_calculo">
 
     <LinearLayout
         android:orientation="vertical"
@@ -54,9 +55,6 @@
             android:backgroundTint="#454C50"
             android:text="Enivar"
             android:textStyle="bold" />
-
-
-
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
