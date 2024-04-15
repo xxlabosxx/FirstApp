@@ -8,7 +8,6 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
 import com.gustavolabos.myapplication.databinding.ActivityMainBinding
-import com.gustavolabos.myapplication.databinding.TelaLinearBinding
 import java.time.LocalDate
 import java.time.LocalDateTime
 

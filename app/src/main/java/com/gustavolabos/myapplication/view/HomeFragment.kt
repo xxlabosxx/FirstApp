@@ -9,7 +9,7 @@ import androidx.navigation.fragment.findNavController
 import com.gustavolabos.myapplication.R
 import com.gustavolabos.myapplication.databinding.FragmentHomeBinding
 
-class HomeFragment : Fragment(){
+class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
     private val binding: FragmentHomeBinding get() = _binding!!
 
@@ -18,13 +18,16 @@ class HomeFragment : Fragment(){
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
-        return  binding.root
+        return binding.root
     }
-override fun onViewCreated(view: View, savedInstanceState: Bundle?){
-    super.onViewCreated(view, savedInstanceState)
-    binding.btnCalculo.setOnClickListener{
-        findNavController().navigate(R.id.calculoFragment)
-    }
-    binding.btnVerifica.setOnClickListener{
 
-    }}}
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.btnCalculo.setOnClickListener {
+            findNavController().navigate(R.id.allPessoasFragment)
+        }
+        binding.btnVerifica.setOnClickListener {
+            findNavController().navigate(R.id.verificaFragment)
+        }
+    }
+}

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -19,7 +20,7 @@
 
     <EditText
         android:id="@+id/edtNome"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Digite seu nome:"
         android:inputType="text"
@@ -32,15 +33,28 @@
         android:layout_marginTop="20dp"
         android:text="Idade:"
         android:textSize="24sp"
-        android:textStyle="italic"/>
+        android:textStyle="italic" />
 
     <EditText
         android:id="@+id/edtAno"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Digite seu ano:"
-        android:textSize="50dp"
-        android:inputType="number" />
+        android:inputType="number"
+        android:textSize="50dp" />
+
+
+    <RadioButton
+        android:id="@+id/btnMale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masculino" />
+
+    <RadioButton
+        android:id="@+id/btnFememale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Feminino"/>
     <Button
         android:id="@+id/btnEnviar"
         android:layout_width="119dp"
@@ -50,5 +64,4 @@
         android:backgroundTint="#454C50"
         android:text="Enivar"
         android:textStyle="bold" />
-
 </LinearLayout>

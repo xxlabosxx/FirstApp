@@ -2,10 +2,10 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-         <item name="colorPrimary">#D61C1C</item>
+         <item name="colorPrimary">#FF6969</item>
     </style>
 
-    <string name="Theme.FirstAppOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+    <string name="Theme.MyApplication.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
         <item name="colorControlNormal">@color/white</item>
     </string>
 
